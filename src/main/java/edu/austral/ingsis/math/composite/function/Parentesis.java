@@ -1,12 +1,10 @@
-package edu.austral.ingsis.math.function;
+package edu.austral.ingsis.math.composite.function;
 
-import edu.austral.ingsis.math.Function;
+import edu.austral.ingsis.math.composite.Function;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Parentesis implements Function {
 

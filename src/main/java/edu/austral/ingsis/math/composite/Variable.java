@@ -1,4 +1,4 @@
-package edu.austral.ingsis.math;
+package edu.austral.ingsis.math.composite;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 public class Variable implements Function {
 
-    private String name;
+    private final String name;
 
     public Variable (String name) {this.name = name;}
 

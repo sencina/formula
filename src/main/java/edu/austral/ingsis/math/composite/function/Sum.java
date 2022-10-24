@@ -1,6 +1,6 @@
-package edu.austral.ingsis.math.function;
+package edu.austral.ingsis.math.composite.function;
 
-import edu.austral.ingsis.math.Function;
+import edu.austral.ingsis.math.composite.Function;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,25 +8,25 @@ import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Div implements Function {
+public class Sum implements Function {
 
     private final Function a;
     private final Function b;
 
-    // a / b
-    public Div(Function a, Function b) {
+    // a + b
+    public Sum(Function a, Function b) {
         this.a = a;
         this.b = b;
     }
 
     @Override
     public double evaluate(Map<String, Double> map) {
-        return a.evaluate(map) / b.evaluate(map);
+        return a.evaluate(map) + b.evaluate(map);
     }
 
     @Override
     public String toString() {
-        return a.toString() + " / " + b.toString();
+        return a.toString() + " + " + b.toString();
     }
 
     @Override
@@ -41,6 +41,5 @@ public class Div implements Function {
     public List<String> listVariables(List<String> list) {
         return Stream.concat(a.listVariables(list).stream(), b.listVariables(list).stream()).collect(Collectors.toList());
     }
-
 
 }

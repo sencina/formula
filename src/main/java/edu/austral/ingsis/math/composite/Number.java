@@ -1,4 +1,4 @@
-package edu.austral.ingsis.math;
+package edu.austral.ingsis.math.composite;
 
 import java.util.ArrayList;
 import java.util.List;

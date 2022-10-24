@@ -1,6 +1,6 @@
-package edu.austral.ingsis.math.function;
+package edu.austral.ingsis.math.composite.function;
 
-import edu.austral.ingsis.math.Function;
+import edu.austral.ingsis.math.composite.Function;
 
 import java.util.ArrayList;
 import java.util.List;
